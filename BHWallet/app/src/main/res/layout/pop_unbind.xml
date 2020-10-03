@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:background="#55000000">
+    <TextView
+        android:id="@+id/unbind"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_45"
+        android:textSize="@dimen/sp_17"
+        android:textColor="#000000"
+        android:text="解约添金宝"
+        android:gravity="center"
+        android:background="@drawable/pop_bg"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_50"/>
+</LinearLayout>

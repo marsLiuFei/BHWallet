@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">渤海钱包</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="loginUser">loginUser</string>
+    <string name="userNameField">userName</string>
+    <string name="loginPwdField">pwd</string>
+    <string name="json_decode_err_hint">JSON格式错误！</string>
+
+    <string name="can_not_open_file">无法打开，请安装相应的软件！</string>
+    <string name="not_file">对不起，这不是文件！</string>
+
+</resources>

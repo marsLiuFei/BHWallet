@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.asuka.android.asukaandroid.widget.listViews.tkrefreshlayout.TwinklingRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:tr_wave_height="180dp"
+    app:tr_head_height="100dp"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+    <com.asuka.android.asukaandroid.view.EmptyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/emptyView"
+        ></com.asuka.android.asukaandroid.view.EmptyView>
+
+</com.asuka.android.asukaandroid.widget.listViews.tkrefreshlayout.TwinklingRefreshLayout>

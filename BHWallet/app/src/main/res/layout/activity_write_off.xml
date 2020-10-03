@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/warnning_icon"
+        android:layout_marginTop="@dimen/dp_70"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#262626"
+        android:textSize="@dimen/sp_21"
+        android:text="确认注销当前账户？"
+        android:layout_marginTop="@dimen/dp_40"/>
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/white"
+        android:text="确认注销"
+        android:layout_marginTop="@dimen/dp_300"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22"
+        android:background="@drawable/circle_red_btn"/>
+</LinearLayout>

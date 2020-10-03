@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.什么是众智存\n"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        众智存是由渤海银行通过本行准入的互联网服务合作平台
+面向个人客户提供的，以人民币计价的特色定期账户增值服
+务。个人客户开通渤海银行电子账户服务后，可自助办理存
+入、支取、查询等交易，全程服务由渤海银行自有服务器完
+成。\n\n众智存”为人民币定期储蓄存款，纳入存款保险保障范
+围。具有本息安全、支取灵活、平台专属利率的特点。客户无
+需前往银行网点即可享受渤海银行安全、便捷的储蓄存款服
+务。\n"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 众智存存到哪里\n"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        存款资金存入渤海银行众智存定期储蓄账户，由渤海银行存管
+并计付利息。\n"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.众智存产品利息收益说明\n"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="       本产品自成功认购之日起计息。存款人持有至到期日，我行
+按照发行时约定的票面利率和付息频率，将利息支付给存款
+人。\n
+（1）A款（利随本清型）\n
+     持有到期一次性支付本金和利息，到期利息=存单本金*票面
+年利率*期限（年）\n
+（2）B款（按月付息型）\n
+        按月支付利息金额=存单本金*票面年利率/12\n
+到期剩余应付利息=存单总利息-实际已支付定期息\n
+利息自成功存入 1 月起结算，按月计付派发。计息日为存入
+日对应日期，如计息月没有对应日期,则计息日为该月的月
+末 ，最后一笔利息于产品到期后随本金计付。利息资金入账时
+间以银行实际清算时间为准，一般为计息日后两个自然日内。\n
+（3）若发生提前支取，支取本金按照支取日渤海银行官网挂
+牌活期存款利率计付利息。对于之前逐月已付定期利息将从提
+前支取的本息中扣除。\n"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.到期本息兑付\n"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        正常状态的众智存到期后本息由我行自动兑付，将本息资
+金自动划转到存款人认购本期众智存产品的账户内，资金入账
+时间以银行实际清算时间为准，一般为到期日后两个自然日
+内。\n"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5.众智存产品能否提前支取\n"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        “众智存”产品可在该产品支取规则下提前支取。其中到期
+付息产品支持多次部分提前支取，部分支取后产品金额需不低
+于该产品起存金额；按月付息型产品仅支持全额提前支取。\n"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6.如何查询我的存单\n"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="         您可通过购买存单的平台APP或小程序查询，可至渤海银行
+各营业网点柜台凭身份证查询，也可开通渤海银行网上银
+行、手机银行服务自助查询。\n"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</ScrollView>

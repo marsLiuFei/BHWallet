@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C5251D</color>
+    <color name="colorPrimaryDark">#C5251D</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="transparent2">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_home_tab_line">#3e4151</color>
+    <color name="et_divider_disable">#2f3240</color>
+    <color name="color_tb_bar">#2f3240</color>
+    <color name="color_tb_bar_s">#282b37</color>
+    <color name="color_home_tab_txt">#a1a1a1</color>
+    <color name="com_pressed">#fff2f2f2</color>
+    <color name="black2">#ffeeeeee</color>
+    <color name="color_line">#DCDCDC</color>
+    <color name="coinitem">#999999</color>
+    <color name="color_bg">#EFEFF4</color>
+    <color name="color_gray">#EFF6FF</color>
+    <color name="coinnum">#FC783E</color>
+    <color name="person_auth_progress_blue">#3b93ff</color>
+    <color name="person_auth_progress_grey">#e5e5e5</color>
+    <color name="msg_emotebar_item_selected">#ffececec</color>
+    <color name="msg_emotebar_item_press">#ff3b3e40</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="tab_top_text_1">#8e8e93</color>
+    <color name="tab_top_text_2">#3b8dff</color>
+</resources>

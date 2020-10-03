@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="姓名"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@null"
+                    android:hint="请输入你的真实姓名"
+                    android:textColor="#333333"
+                    android:textColorHint="#A1A1A1"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="#DBDBDB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="身份证号"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@null"
+                    android:digits="0123456789Xx"
+                    android:hint="请输入你的身份证号码"
+                    android:textColor="#333333"
+                    android:textColorHint="#A1A1A1"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="#DBDBDB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="上传身份证照片"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/card1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_80"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/addpic" />
+
+                <ImageView
+                    android:id="@+id/card2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_80"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/addpic" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="#DBDBDB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="手机号码"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@null"
+                    android:hint="请输入你的手机号码"
+                    android:inputType="phone"
+                    android:textColor="#333333"
+                    android:textColorHint="#A1A1A1"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="#DBDBDB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="验证码"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/code"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="请输入短信验证码"
+                    android:inputType="number"
+                    android:textColor="#333333"
+                    android:textColorHint="#A2A2A2"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/get_yzm"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:gravity="center"
+                    android:text="发送验证码"
+                    android:textColor="#262626"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="#DBDBDB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="银行卡号"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/bank_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@null"
+                    android:hint="请输入你的银行借记卡号"
+                    android:inputType="number"
+                    android:textColor="#333333"
+                    android:textColorHint="#A1A1A1"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="#DBDBDB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="卡密码"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/card_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@null"
+                    android:hint="请输入6位数字卡密码"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:textColor="#333333"
+                    android:textColorHint="#A1A1A1"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:background="#DBDBDB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="设置交易密码"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/password1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@null"
+                    android:hint="请输入6位数字密码"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:textColor="#333333"
+                    android:textColorHint="#A1A1A1"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="#DBDBDB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="确认密码"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/password2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@null"
+                    android:hint="请再次输入密码"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:textColor="#333333"
+                    android:textColorHint="#A1A1A1"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:background="#DBDBDB" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:text="是否同意开通电子账户"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.android.bhwallet.views.WiperSwitch
+                    android:id="@+id/ws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_12" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#DBDBDB" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_22"
+            android:layout_marginBottom="@dimen/dp_43"
+            android:background="@drawable/circle_red_btn"
+            android:text="立即开通"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+</ScrollView>

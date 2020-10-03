@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+    <com.asuka.android.asukaandroid.widget.AsukaToolbar
+        android:id="@+id/asuka_tool_bar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        app:navigationIcon="@drawable/icon_back"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        app:title="钱包">
+
+
+    </com.asuka.android.asukaandroid.widget.AsukaToolbar>
+    <FrameLayout
+        android:id="@+id/linAsukaBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+</LinearLayout>

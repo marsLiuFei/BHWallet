@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.1'
+    defaultConfig {
+        //applicationId "com.android.bhwallet"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "v1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    signingConfigs {
+        release {
+            storeFile file("app2018.jks")
+            storePassword "123456"
+            keyAlias "jdd"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro','proguard-project.txt'
+        }
+    }
+    sourceSets{
+        main{
+            jniLibs.srcDirs=['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':core')
+    compile project(':library_update')
+    compile project(':FlycoTabLayout_Lib')
+    compile project(':wheelLibrary')
+    //刷新库
+   // implementation 'com.github.shucc:Android-PullToRefresh:v3.0.1'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+}

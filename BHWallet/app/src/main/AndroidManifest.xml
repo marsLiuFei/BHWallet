@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.bhwallet"
+    android:hardwareAccelerated="true">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 硬件特性 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:name="com.android.bhwallet.MyApplication"
+        android:hardwareAccelerated="true"
+        android:networkSecurityConfig="@xml/security_config">
+<!--        android:icon="@mipmap/icon"-->
+<!--        android:label="@string/app_name"-->
+<!--        android:supportsRtl="true"-->
+<!--        android:theme="@style/AppTheme">-->
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <!-- 主页 -->
+
+        <activity android:name=".app.Main.UI.TestActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+<!--            <intent-filter android:label="@string/launcher_name">-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.android.bhwallet.app.Main.UI.WalletMainActivity"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+
+        <!--开户协议-->
+        <activity android:name=".app.Main.UI.WalletOpenRulesActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+
+        <!--实名认证-->
+        <activity android:name=".app.Main.UI.WalletOpenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--钱包开通成功-->
+        <activity android:name=".app.Main.UI.WalletOpenSuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--金融服务管理-->
+        <activity android:name=".app.Finance.FinanceManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--电子账户-->
+        <activity android:name=".app.Finance.FinanceAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--银行卡管理-->
+        <activity android:name=".app.Card.CardManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--支付密码-->
+        <activity android:name=".app.Card.PayPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--绑定银行卡-->
+        <activity android:name=".app.Card.NewCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--变更绑卡成功-->
+        <activity android:name=".app.Card.ChangeSuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--注销成功-->
+        <activity android:name=".app.WriteOff.WriteOffSuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+
+        <!--支付管理-->
+        <activity android:name=".app.PayManage.PayManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--安全校验-->
+        <activity android:name=".app.PayManage.SafeCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--核对身份信息-->
+        <activity android:name=".app.PayManage.CheckIdcardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--找回密码-->
+        <activity android:name=".app.PayManage.FindPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"/>
+        <!--支付密码重置-->
+        <activity android:name=".app.PayManage.SetNewPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--支付密码重置成功-->
+        <activity android:name=".app.PayManage.ResetPasswordSuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--验证手机号-->
+        <activity android:name=".app.ChangeTel.CheckPhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--变更手机号-->
+        <activity android:name=".app.ChangeTel.ChangePhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--注销账户-->
+        <activity android:name=".app.WriteOff.WriteOffActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--众智存-->
+        <activity android:name=".app.Save.UI.SaveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--产品详情-->
+        <activity android:name=".app.Save.UI.ProduceDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--购买产品-->
+        <activity android:name=".app.Save.UI.BuyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--购买产品-输入密码-->
+        <activity android:name=".app.Save.UI.BuyPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--开通添金宝-->
+        <activity android:name=".app.Fund.UI.FundOpenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--添金宝-->
+        <activity android:name=".app.Fund.UI.FundActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--充值-->
+        <activity android:name=".app.Money.UI.PayInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--提现-->
+        <activity android:name=".app.Money.UI.PayOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--我的余额-->
+        <activity android:name=".app.Money.UI.MoneyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--账单列表-->
+        <activity android:name=".app.Money.UI.MoneyListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--账单详情-->
+        <activity android:name=".app.Money.UI.MoneyDetailctivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--账单日期选择-->
+        <activity android:name=".app.Money.UI.DateSelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--电子钱包开户规则-->
+        <activity android:name=".app.Main.UI.EleOpenRulesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--电子钱包开户-->
+        <activity android:name=".app.Main.UI.EleOpenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--电子全包开户前补录信息-->
+        <activity android:name=".app.Main.UI.BuLuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--出售存款-->
+        <activity android:name=".app.Save.UI.SellActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--钱包常见问题-->
+        <activity android:name=".app.UserCenter.UI.QuestionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+
+        <!--机构列表-->
+        <activity android:name=".app.Main.UI.JobListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+
+        <!--渤金钱包编号-->
+        <activity android:name=".app.Main.UI.WalletNumActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--电子钱包修改绑定卡-->
+        <activity android:name=".app.Card.EleNewCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--电子钱包修改密码-->
+        <activity android:name=".app.Finance.EleResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--电子钱包修改手机号-->
+        <activity android:name=".app.Finance.EleModifyTelActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"/>
+        <!--图片浏览-->
+        <activity
+            android:name=".app.Photo.UI.ImageBrowserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <!--找回密码-->
+        <activity android:name=".app.PayManage.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <!--播放录像-->
+        <activity
+            android:name=".app.Photo.UI.PlayVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <!--录像-->
+        <activity
+            android:name=".app.Photo.UI.RecordMediaAcitivty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+
+        <!--刘海屏-->
+        <meta-data android:name="android.notch_support" android:value="true"/>
+
+        <!-- 7.0以上手机拍照闪退解决方案 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

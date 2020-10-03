@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#000000"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:text="1、什么是新服务APP·渤金钱包？\n\n
+新服务APP·渤金钱包，是由渤海银行为北京时代匠心大数据科技有限公司新服务平台，提供的用于平台资金存管、支付结算等服务的一款金融产品。目前在新服务平台主要用于物业缴费、商品和服务消费，以及渤海银行旗下的储蓄理财产品的申购和赎回，资金交易安全有保障。\n\n\n
+
+2、新服务APP为什么要开通渤金钱包？\n\n
+在新服务平台上开通渤海银行的渤金钱包，使得新服务APP的钱包功能更规范，以便资金通过您名下银行卡帐户直接进入渤金钱包，交易资金由银行存管，安全更有保障。\n\n\n
+
+3、渤金钱包支持哪些银行卡绑定？\n\n
+渤金钱包目前仅支持以下银行借记卡，不支持银行信用卡。 支持的银行有：中国工商银行、中国农业银行、中国建设银行、中国银行、兴业银行、中信银行、平安银行、中国邮政储蓄银行、上海银行、浦东发展银行、民生银行、招商银行、广发银行、华夏银行、渤海银行。\n\n\n
+
+4、充值渤金钱包多久到帐？\n\n
+向渤金钱包充值一般实时到帐。 因银行系统原因可能存在延迟，请您耐心等待。 如有疑问，请您联系渤海银行客服咨询。\n\n\n
+
+5、渤金钱包提现未到帐怎么办？\n\n
+正常情况下，从渤金钱包提现到银行卡，渤海银行卡一般2小时内到帐，其他银行卡T+1日到帐，可能受银行通道影响，请耐心等待。 若超时未到帐，可能有以下原因：\n\n
+
+1、开通钱包时绑定卡是银行二类户\n\n
+
+2、绑定的银行卡当日入金额度已达到上限。\n\n
+
+这两种原因会导致提现被退回至渤金钱包。若提现被退回，一般银行在一个工作日内操作退回到渤金钱包。同时，在资金未退回到渤金钱包期间，请不要进行换绑卡操作。如在此期间进行换绑卡，会导致资金无法被正常退回至渤金钱包。如在此期间已经换绑卡，请重新换绑回来，以免耽误您的资金退回时间。\n\n"/>
+
+    </LinearLayout>
+
+</ScrollView>
